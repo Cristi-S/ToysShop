@@ -1,0 +1,34 @@
+.no-margin {
+    margin: 0;
+}
+
+#goodsListToggle button:not(.active) span {
+    display: none;
+}
+
+div.list-view div.card {
+    width: 100%;
+}
+
+div.list-view div.card {
+    width: 100%;
+}
+
+div.list-view .card img {
+    display: inline-block;
+    float: left;
+    width: 20%;
+}
+
+div.list-view .card div.caption {
+    display: inline-block;
+    float: right;
+    width: 80%;
+}
+
+/*.nav-justified {*/
+/*background-color: antiquewhite;*/
+/*}  */
+.nav-item-gerl {
+    background-color: antiquewhite;
+}
