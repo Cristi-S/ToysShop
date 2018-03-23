@@ -7,4 +7,4 @@
 <script src="../js/bootstrap.min.js"></script>
 <script src="../index1.js"></script>
 </body>
-</htmlp>
+</html>
