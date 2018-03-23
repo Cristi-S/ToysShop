@@ -1,26 +1,20 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-    <meta charset="utf-8">
-    <title> Магазин игрушек</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-</head>
-<body>
-<div class="container">
-    <h1>Игрушки</h1>
-    <div>
-        <div class="product">
-            <h3>
-                <?= $product['name'] ?></h3>
-            <em>Опубликовано: <?= $product['date'] ?></em>
-            <p><?= $product['description'] ?></p>
+<?php include 'includes/header.php'; ?>
+<div class="list-view" id="appList">
+
+    <div class="col-sm-6 col-md-4 card">
+        <div class="thumbnail">
+            <? echo '<img src="data:image/png;base64,' . base64_encode($product['image']) . '">'; ?>
+            <div class="caption">
+                <h3><?= $product['name'] ?></h3>
+                <h6><?= $product['cost'] ?></h6>
+                <p><a href="#" class="btn btn-primary" role="button"> <i class="glyphicon glyphicon-check"> </i> В
+                        корзину</a></p>
+            </div>
+            <div class="clearfix"></div>
         </div>
     </div>
-    <footer>
-        <p>Игрушки<br>Copyright &copy; 2017</p>
-    </footer>
+    <h4>Описание товара</h4>
+    <p><?= $product['description'] ?></p>
 </div>
-</body>
-</html>
+<?php include 'includes/footer.php' ?>
+

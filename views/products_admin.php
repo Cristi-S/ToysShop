@@ -11,7 +11,7 @@
 <div class="container">
     <h1>Игрушки</h1>
     <div>
-        <a href="index.php?action=add">Добавить статью </a>
+        <a href="index.php?action=add">Добавить товар </a>
         <table class="admin-table">
             <tr>
                 <th> ДАТА</th>

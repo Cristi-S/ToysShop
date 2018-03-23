@@ -1,12 +1,6 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: narba
- * Date: 23.03.2018
- * Time: 17:28
- */
 session_start();
-include 'Config.php'; ?>
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -29,7 +23,9 @@ include 'Config.php'; ?>
                 <div class="row">
                     <div class="col-6 col-lg-3 justify-content-start">
                         <ul class="nav navbar-nav">
-                            <li><img width="50" height="50" alt="Brend" src="../img/cat.jpg"></li>
+                            <a href="index.php">
+                                <li><img width="50" height="50" alt="Brend" src="../img/cat.jpg"></li>
+                            </a>
                         </ul>
                     </div>
                     <ul class="nav navbar-nav navbar-right">
@@ -37,6 +33,8 @@ include 'Config.php'; ?>
                         </li>
                         <li class="nav-item d-none d-lg-block"><a class="nav-link" href='/delivery-and-pay/'>Оплата и
                                 доставка</a></li>
+                        <li class="nav-item d-none d-lg-block"><a class="nav-link" href='../admin'>Панель
+                                администратора</a></li>
                         <li class="nav-item d-none d-lg-block"><a class="nav-link" href='../login.php'>Личный
                                 кабинет</a></li>
                     </ul>
@@ -79,9 +77,6 @@ include 'Config.php'; ?>
             </ul>
         </li>
     </ul>
-
-
-    <a href="../admin">Панель администратора</a>
 
 
     <div class="row">

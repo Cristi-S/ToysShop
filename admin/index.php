@@ -1,8 +1,6 @@
 <?php
-require_once("../_database.php");
+include '../includes/Config.php';
 require_once("../models/products.php");
-
-$link = db_connect();
 
 if (isset($_GET['action']))
     $action = $_GET['action'];
